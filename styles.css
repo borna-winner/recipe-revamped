@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cornsilk;
+    font-family: Arial, sans-serif;
+
+}
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+/* The navbar container */
+.topNav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+p{
+    letter-spacing: .1rem;
+    line-height: 1.3rem;
+
+}
+  /* Navbar links */
+.topNav a {
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+  /* Links - change color on hover */
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.mainContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.column {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .mainContent{
+    grid-template-columns: 1fr;
+    }
+  }
+.footer {
+    text-align: center;
+    padding: 14px;
+}
+.button{
+    color: rgb(255, 255, 255);
+	background: #fb8332;
+	border: 0px;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 16px 80px;
+	text-align: center;
+	outline: none !important;
+	cursor: pointer;
+    
+}
+.CTA{
+    text-align: center;
+}
