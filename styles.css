@@ -4,7 +4,6 @@
 html {
     padding: 0;
     margin: 0;
-
 }
 body {
     margin: 0;
@@ -77,6 +76,28 @@ p{
 	cursor: pointer;
     
 }
+@media screen and (max-width:695px) {
+    .recipeItems{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
 .CTA{
     text-align: center;
+}
+/* Recipes page css */
+.recipeItems{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem;
+}
+.recipeItems > div{
+    margin: 2rem;
+    justify-content: center;
+}
+.recipePictures{
+    height: auto;
+    width: 100%;
+
 }
